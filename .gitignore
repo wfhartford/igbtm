@@ -1,0 +1,10 @@
+test-dep/.gradle
+test-dep/.idea
+test-dep/build
+test-dep/classes
+test-dep/test-dep.iml
+compile-dep/.gradle/
+compile-dep/.idea/
+compile-dep/build/
+compile-dep/classes/
+compile-dep/compile-dep.iml

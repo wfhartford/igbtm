@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+apply plugin: 'application'
+
+group = 'ca.cutterslade.igbtm'
+version = '1.0-SNAPSHOT'
+mainClassName = "ca.cutterslade.igbtm.user.ListNames"
+
+repositories {
+  mavenCentral()
+  mavenLocal()
+}
+
+dependencies {
+  compile group: 'ca.cutterslade.igbtm', name: 'compile-dep', version: '1.0-SNAPSHOT'
+  testCompile 'junit:junit:4.11'
+  testCompile 'com.google.guava:guava:14.0.1'
+}
+
+run {
+  args = ["jay", "silent bob"]
+}
